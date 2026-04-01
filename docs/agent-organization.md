@@ -4,7 +4,7 @@
 
 mugu-orchestrationはハイブリッド型エージェント組織を採用。統括層（Orchestrator）の下に、機能別チームを配置しています。
 
-**現在のエージェント数: 12体**
+**現在のエージェント数: 11体**
 
 ---
 
@@ -16,9 +16,8 @@ flowchart TB
         orchestrator["Orchestrator<br/>タスク振り分け"]
     end
 
-    subgraph Development["開発チーム（7体）"]
+    subgraph Development["開発チーム（6体）"]
         architect["Architect<br/>設計（内部）"]
-        planner["Planner<br/>実装計画"]
         implementer["Implementer<br/>実装（内部）"]
         test-gen["Test Generator<br/>テスト生成（内部）"]
         code-reviewer["Code Reviewer<br/>コード品質"]
@@ -40,8 +39,7 @@ flowchart TB
     orchestrator --> Business
     orchestrator --> Content
 
-    architect --> planner
-    planner --> implementer
+    architect --> implementer
     implementer --> test-gen
     test-gen --> code-reviewer
 ```
@@ -54,9 +52,8 @@ flowchart TB
 agents/
 ├── orchestrator.md              # 統括エージェント
 │
-├── development/                 # 開発チーム（7体）
+├── development/                 # 開発チーム（6体）
 │   ├── architect.md            # 設計・技術選定
-│   ├── planner.md              # 実装計画
 │   ├── implementer.md          # コード実装
 │   ├── test-generator.md       # テスト生成
 │   ├── code-reviewer.md        # コード品質レビュー
@@ -82,12 +79,11 @@ agents/
 |-------------|------|--------|
 | **Orchestrator** | タスク振り分け、チーム間調整 | Sonnet |
 
-### 開発チーム（7体）
+### 開発チーム（6体）
 
 | エージェント | 役割 | モデル | コマンド |
 |-------------|------|--------|---------|
 | **Architect** | 設計・技術選定（内部） | Opus | - |
-| **Planner** | 実装計画・タスク分解 | Opus | `/plan` |
 | **Implementer** | コード実装（内部） | Opus | - |
 | **Test Generator** | テスト提案・生成（内部） | Sonnet | - |
 | **Code Reviewer** | コード品質レビュー | Sonnet | `/code-review` |
@@ -119,9 +115,6 @@ agents/
 Architect（設計・技術選定）
     │
     ▼
-Planner（実装計画・タスク分解）
-    │
-    ▼
 Implementer（コード実装）
     │
     ▼
@@ -143,8 +136,8 @@ Doc Updater（ドキュメント更新）
 
 ## 内部エージェント
 
-以下は直接コマンド呼び出しではなく、Orchestrator/Plannerからの委譲で動作する内部エージェントです:
+以下は直接コマンド呼び出しではなく、Orchestratorからの委譲で動作する内部エージェントです:
 
-- **Architect** - 設計タスクをPlannerまたはOrchestratorが委譲
-- **Implementer** - 実装タスクをPlannerが委譲
-- **Test Generator** - テスト生成をPlannerまたはCode Reviewerが委譲
+- **Architect** - 設計タスクをOrchestratorが委譲
+- **Implementer** - 実装タスクをOrchestratorが委譲
+- **Test Generator** - テスト生成をCode Reviewerが委譲

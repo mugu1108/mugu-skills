@@ -15,11 +15,10 @@ rules/       # 汎用コーディングルール
 
 | コマンド | スキル | 用途 |
 |---------|--------|------|
-| `/plan` | plan | 実装計画作成 |
 | `/code-review` | code-review | コード品質チェック |
 | `/slide` | slide | Marpスライド生成 |
 | `/security-review` | security-review | セキュリティ監査 |
-| `/doc-update` | doc-update | ドキュメント同期 |
+| `/doc-update` | doc-update | docs/ 仕様書の自動同期 |
 | `/md-review` | md-review | MD品質チェック |
 | `/time-track` | time-track | 時間追跡 |
 | `/expense-track` | expense-track | 経費記録 |

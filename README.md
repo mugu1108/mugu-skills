@@ -20,11 +20,10 @@ git submodule add https://github.com/mugu1108/mugu-skills.git mugu-skills
 
 | コマンド | 用途 |
 |---------|------|
-| `/plan` | 実装計画作成 |
 | `/code-review` | コード品質チェック |
 | `/slide` | Marpスライド生成 |
 | `/security-review` | セキュリティ監査 |
-| `/doc-update` | ドキュメント同期 |
+| `/doc-update` | docs/ 仕様書の自動同期 |
 | `/md-review` | MD品質チェック |
 | `/time-track` | 時間追跡 |
 | `/expense-track` | 経費記録 |
