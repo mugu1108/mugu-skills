@@ -1,0 +1,26 @@
+{
+  "name": "mugu-skills",
+  "description": "Claude Code skills, commands, and agents collection",
+  "author": {
+    "name": "Seiji",
+    "url": "https://github.com/seiji"
+  },
+  "homepage": "https://github.com/mugu1108/mugu-skills",
+  "repository": "https://github.com/mugu1108/mugu-skills",
+  "license": "MIT",
+  "version": "0.1.0",
+  "keywords": [
+    "claude-code",
+    "skills",
+    "agents",
+    "commands",
+    "code-review",
+    "slide",
+    "workflow",
+    "automation"
+  ],
+  "commands": "./commands",
+  "skills": "./skills",
+  "agents": "./agents",
+  "rules": "./rules"
+}
