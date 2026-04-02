@@ -32,6 +32,10 @@ rules/       # 汎用コーディングルール
 | `/rules-distill` | rules-distill | スキルからルールを抽出 |
 | `/git-workflow` | git-workflow | Git ブランチ戦略・コミット規約 |
 | `/repo-scan` | repo-scan | リポジトリ資産監査 |
+| `/autonomous-agent` | autonomous-agent-harness | 自律型エージェント構築（定期実行・監視） |
+| `/skill-stocktake` | skill-stocktake | スキル品質監査 |
+| `/data-scraper` | data-scraper-agent | 無料スタックのデータ収集エージェント |
+| `/workspace-audit` | workspace-surface-audit | Claude Code 環境診断・最適化 |
 
 ## 利用方法
 
