@@ -22,6 +22,8 @@ rules/       # 汎用コーディングルール
 | `/md-review` | md-review | MD品質チェック |
 | `/time-track` | time-track | 時間追跡 |
 | `/expense-track` | expense-track | 経費記録 |
+| `/lp` | lp | クリップボード長文ペースト |
+| `/learn` | learn | セッションからパターン抽出・保存 |
 
 ## 利用方法
 
