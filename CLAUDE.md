@@ -24,6 +24,14 @@ rules/       # 汎用コーディングルール
 | `/expense-track` | expense-track | 経費記録 |
 | `/lp` | lp | クリップボード長文ペースト |
 | `/learn` | learn | セッションからパターン抽出・保存 |
+| `/context-budget` | context-budget | コンテキスト消費量分析・節約提案 |
+| `/strategic-compact` | strategic-compact | 戦略的コンテキスト圧縮 |
+| `/codebase-onboarding` | codebase-onboarding | 新リポの構造分析・CLAUDE.md生成 |
+| `/security-scan` | security-scan | Claude Code 設定のセキュリティスキャン |
+| `/coding-standards` | coding-standards | TS/React/Node.js コーディング規約 |
+| `/rules-distill` | rules-distill | スキルからルールを抽出 |
+| `/git-workflow` | git-workflow | Git ブランチ戦略・コミット規約 |
+| `/repo-scan` | repo-scan | リポジトリ資産監査 |
 
 ## 利用方法
 
